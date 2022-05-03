@@ -150,23 +150,6 @@ begin
 	(M,R)=size(S)
 end
 
-# ╔═╡ 0b591b28-f06c-4c0c-8b5b-12fac77320e6
-species_array
-
-# ╔═╡ 97b0763d-dcab-4afa-b660-52e18b3d523f
-begin
-	PM= lib.expa(S)
-
-	#get extreme pathways
-	P= PM[:,1:R]
-end
-
-# ╔═╡ 007aa318-bb95-4edb-aed8-57851d21f060
-PM
-
-# ╔═╡ 7b0ee150-29d7-46c4-9e1d-c565d986c871
-P
-
 # ╔═╡ 999ae1fd-5341-4f66-9db2-dec53fa0cd49
 begin
 	function binary_stoichiometric_matrix(matrix::Array{Float64,2})::Array{Int64,2}
@@ -209,6 +192,23 @@ end
 
 # ╔═╡ 5953cbcc-58f0-4fa8-ad04-35dfad7c36b9
 RCA
+
+# ╔═╡ 0b591b28-f06c-4c0c-8b5b-12fac77320e6
+species_array
+
+# ╔═╡ 97b0763d-dcab-4afa-b660-52e18b3d523f
+begin
+	PM= lib.expa(S)
+
+	#get extreme pathways
+	P= PM[:,1:R]
+end
+
+# ╔═╡ 007aa318-bb95-4edb-aed8-57851d21f060
+PM
+
+# ╔═╡ 7b0ee150-29d7-46c4-9e1d-c565d986c871
+P
 
 # ╔═╡ ab2bcfd5-3ba7-4388-8a3c-2cb95fba989a
 html"""
